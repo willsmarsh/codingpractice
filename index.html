@@ -25,14 +25,20 @@
             <td>soft=1in</td>
         </tr>
     </table>
-    <div style="background-color:green;color:white;padding:20px></div>
-    <p>Here is the information you have submitted:</p>
-    <ol>
-        <li><em>Name:</em> <?php echo $_POST["name"]?></li>
-        <li><em>Email:</em> <?php echo $_POST["email"]?></li>
-        <li><em>Subject:</em> <?php echo $_POST["subject"]?></li>
-        <li><em>Message:</em> <?php echo $_POST["message"]?></li>
-    </ol>
+    <form>
+        <input type="radio" name="gender" value="male" />Male
+        <br />
+        <input type="radio" name="gender" value="female" />Female
+        <br />
+        <input type="radio" name="gender" value="furry" />Furry
+        <select>What <span><i>is</i></span> David?
+            <option>Straight</option>
+            <option>Gay</option>
+            <option>Other</option>
+        </select>
+        <p>How gay is David on a scale from 1-100?</p>
+        <input type="number" min="1" max="100" />
+    </form>
     <script></script>
 </body>
 </html>  
